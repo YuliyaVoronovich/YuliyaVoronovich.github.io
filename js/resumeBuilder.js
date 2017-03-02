@@ -44,7 +44,7 @@ var work={
 			"employer":"OOO Belan technologies",
 			"city":"Minsk",
 			"dates": "Avg 2012-Future",
-			"position": IT Engineer
+			"position": "IT Engineer"
 		}
 		
 	]
