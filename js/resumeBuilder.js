@@ -60,15 +60,14 @@ $('#header').append(formattedRole);
 $('#header').append(formattedPic);
 $('#header').append(formattedMes);
 
-for (contact in myContact){
+/*for (contact in myContact){
 
 	var formattedContactName=HTMLcontactGeneric.replace("%contact%",contact);
-	console.log(formattedContactName);
 	var formattedContactTitle=HTMLcontactGeneric.replace("%data%",myContact[contact]);
 	var formattedNamTitle=formattedContactName+formattedContactTitle;
-	$('#topContacts').prepare(formattedNamTitle);
+	$('#topContacts').prepend(formattedNamTitle)
 
-}
+}*/
 
 
 if (bio.skills.length >0){
@@ -93,7 +92,7 @@ for (job in work.jobs){
 	var formattedEmployer=HTMLworkEmployer.replace("%data%",work.jobs[job].employer);
 	var formattedTitle=HTMLworkTitle.replace("%data%",work.jobs[job].position);
 	var formattedDates=HTMLworkDates.replace("%data%",work.jobs[job].dates);
-	var formattedLocation=HTMLworkLocation.replace("%data%",work.jobs[job].location);
+	var formattedLocation=HTMLworkLocation.replace("%data%",work.jobs[job].city);
 	var formattedEmployerTitle=formattedEmployer+formattedTitle;
 
 	$('.work-entry:last').append(formattedEmployerTitle);
