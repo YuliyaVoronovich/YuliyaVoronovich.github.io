@@ -56,18 +56,19 @@ var formattedPic=HTMLheaderRole.replace("%data%",bio.pictureUrl);
 
 $('#header').append(formattedName);
 $('#header').append(formattedRole);
+$('#header').append(formattedPic);
 
 if (bio.skills.length >0){
 	$('#header').append(HTMLskillsStart);
 
 	var formattedSkill=HTMLskills.replace("%data%",bio.skills[0]);
-	$('#skills-h3').append(formattedSkill);
+	$('#skills').append(formattedSkill);
 	formattedSkill=HTMLskills.replace("%data%",bio.skills[1]);
-	$('#skills-h3').append(formattedSkill);
+	$('#skills').append(formattedSkill);
 	formattedSkill=HTMLskills.replace("%data%",bio.skills[2]);
-	$('#skills-h3').append(formattedSkill);
+	$('#skills').append(formattedSkill);
 	formattedSkill=HTMLskills.replace("%data%",bio.skills[3]);
-	$('#skills-h3').append(formattedSkill);
+	$('#skills').append(formattedSkill);
 	formattedSkill=HTMLskills.replace("%data%",bio.skills[4]);
-	$('#skills-h3').append(formattedSkill);
+	$('#skills').append(formattedSkill);
 }
