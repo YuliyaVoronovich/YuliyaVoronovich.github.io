@@ -52,7 +52,7 @@ var work={
 
 var formattedName=HTMLheaderName.replace("%data%",bio.name);
 var formattedRole=HTMLheaderRole.replace("%data%",bio.role);
-var formattedPic=HTMLheaderRole.replace("%data%",bio.pictureUrl);
+var formattedPic=HTMLbioPic.replace("%data%",bio.pictureUrl);
 
 $('#header').append(formattedName);
 $('#header').append(formattedRole);
