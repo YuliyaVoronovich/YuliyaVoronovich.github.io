@@ -61,12 +61,12 @@ $('#header').append(formattedPic);
 $('#header').append(formattedMes);
 
 for (contact in myContact){
-	$('#workExperience').append(HTMLworkStart);
 
 	var formattedContactName=HTMLcontactGeneric.replace("%contact%",contact);
+	console.log(formattedContactName);
 	var formattedContactTitle=HTMLcontactGeneric.replace("%data%",myContact[contact]);
 	var formattedNamTitle=formattedContactName+formattedContactTitle;
-	$('#topContacts').append(formattedNamTitle);
+	$('#topContacts').prepare(formattedNamTitle);
 
 }
 
