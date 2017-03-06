@@ -52,6 +52,22 @@ var work={
 
 var formattedName=HTMLheaderName.replace("%data%",bio.name);
 var formattedRole=HTMLheaderRole.replace("%data%",bio.role);
+var formattedPic=HTMLheaderRole.replace("%data%",bio.pictureUrl);
 
 $('#header').append(formattedName);
 $('#header').append(formattedRole);
+
+if (bio.skills.length >0){
+	$('#header').append(HTMLskillsStart);
+
+	var formattedSkill=HTMLskills.replace("%data%",bio.skills[0]);
+	$('#skills-h3').append(formattedSkill);
+	formattedSkill=HTMLskills.replace("%data%",bio.skills[1]);
+	$('#skills-h3').append(formattedSkill);
+	formattedSkill=HTMLskills.replace("%data%",bio.skills[2]);
+	$('#skills-h3').append(formattedSkill);
+	formattedSkill=HTMLskills.replace("%data%",bio.skills[3]);
+	$('#skills-h3').append(formattedSkill);
+	formattedSkill=HTMLskills.replace("%data%",bio.skills[4]);
+	$('#skills-h3').append(formattedSkill);
+}
